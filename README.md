@@ -2,6 +2,8 @@
 
 An interactive financial data visualization tool that displays historical market data—volatility, liquidity, and performance—across **Daily**, **Weekly**, and **Monthly** views. Built with React, it provides an intuitive calendar interface backed by real Binance OHLCV data.
 
+Hosted live site - https://financial-data-calendar.onrender.com
+
 ## 🧠 Features
 
 - 📅 Custom calendar with Daily, Weekly, and Monthly views
