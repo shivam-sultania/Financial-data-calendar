@@ -1,0 +1,61 @@
+.calendar-cell {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 4px;
+  min-height: 60px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.2s ease;
+}
+
+.cell-content {
+  z-index: 1;
+}
+
+.cell-date {
+  font-weight: bold;
+}
+
+.no-data {
+  color: #999;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0.2;
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.overlay-dots {
+  background-image: radial-gradient(#444 1.5px, transparent 1px);
+  background-size: 6px 6px;
+}
+
+.overlay-stripes {
+  background-image: repeating-linear-gradient(45deg, #777, #777 1.5px, transparent 1.5px, transparent 5px);
+}
+
+.overlay-gradient {
+  background-blend-mode: overlay;
+}
+
+.volume-bar {
+  height: 6px;
+  margin-top: 4px;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.calendar-cell-today {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+}
